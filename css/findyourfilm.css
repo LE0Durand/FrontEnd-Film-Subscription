@@ -18,7 +18,7 @@ html {
 }
 
 .blue {
-  color: rgba(0,58,143,1) !important;
+  color: rgba(0, 58, 143, 1) !important;
 }
 
 /*
@@ -32,8 +32,12 @@ NAVBAR
   padding: 0px 50px;
   display: flex;
   align-items: center;
-  background: rgb(0,128,152);
-  background: linear-gradient(121deg, rgba(0,128,152,1) 0%, rgba(0,58,143,1) 100%);
+  background: rgb(0, 128, 152);
+  background: linear-gradient(
+    121deg,
+    rgba(0, 128, 152, 1) 0%,
+    rgba(0, 58, 143, 1) 100%
+  );
   opacity: 0.9;
 }
 
@@ -58,11 +62,11 @@ NAVBAR
   font-weight: 600;
 }
 
-.link__hover-effect{
+.link__hover-effect {
   position: relative;
 }
 
-.link__hover-effect:after{
+.link__hover-effect:after {
   content: "";
   position: absolute;
   width: 0;
@@ -72,12 +76,11 @@ NAVBAR
   transition: all 300ms ease;
 }
 
-
-.link__hover-effect--black:after{
+.link__hover-effect--black:after {
   background-color: white;
 }
 
-.link__hover-effect:hover::after{
+.link__hover-effect:hover::after {
   left: 0;
   width: 100%;
 }
@@ -90,7 +93,7 @@ NAVBAR
   transition: all 300ms ease;
 }
 
-.navbar__button:hover{
+.navbar__button:hover {
   background-color: #ff328f;
   color: white;
 }
@@ -151,7 +154,7 @@ LANDING PAGE
   width: 100%;
   background-color: white;
   border-radius: 50px;
-  border: 1px solid #0a1f44;
+  border: 2px solid #0a1f44;
   color: #0a1f44;
   height: 100%;
   line-height: 40px;
@@ -160,6 +163,10 @@ LANDING PAGE
   transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   font-size: 24px;
   padding-left: 25px;
+}
+
+.landing__input--search:hover {
+  border-color: rgba(0, 58, 143, 1);
 }
 
 .landing__input--button {
@@ -171,13 +178,18 @@ LANDING PAGE
   background-color: transparent;
   cursor: pointer;
   font-size: 40px;
-  color: rgba(0,58,143,1);
+  color: rgba(0, 58, 143, 1);
   border-radius: 20px;
   transition: all 300ms ease;
 }
 
 .landing__input--button:hover {
-    color: #ff328f;
+  color: #ff328f;
+}
+
+#search-film {
+  width: 100%;
+  height: 100%;
 }
 
 /* Small phones*/
@@ -203,24 +215,23 @@ LANDING PAGE
     height: auto;
   }
 
-  .landing__title{
-      font-size: 38px;
+  .landing__title {
+    font-size: 38px;
   }
 
-  .landing__input--wrapper{
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+  .landing__input--wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .landing__input--search{
-      height: 60px;
+  .landing__input--search {
+    height: 60px;
   }
-
 }
 
-@media (max-width: 630px){
-    .landing__img{
-        display: none;
-    }
+@media (max-width: 630px) {
+  .landing__img {
+    display: none;
+  }
 }

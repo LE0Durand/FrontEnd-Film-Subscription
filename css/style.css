@@ -147,42 +147,35 @@ LANDING PAGE
   max-width: 730px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 40px;
 }
 
-.landing__input--search {
+.landing__input--link {
+  text-decoration: none;
   width: 75%;
-  background-color: white;
-  border-radius: 20px;
-  border: 1px solid #0a1f44;
-  color: #0a1f44;
   height: 70px;
-  line-height: 40px;
-  outline: none;
-  padding: 0 15px;
-  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  font-size: 24px;
-  padding-left: 25px;
-}
-
-.landing__input--button {
-  width: 20%;
-  height: 70px;
+  text-align: center;
   border: 1px solid #6030b1;
   background-color: #6030b1;
   box-shadow: 7px 7px 14px rgb(134 93 204 / 30%);
   cursor: pointer;
-  margin-left: 20px;
-  font-size: 40px;
+  font-size: 36px;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 50px;
   transition: all 0.25s ease;
+  padding-top: 8px;
 }
 
-.landing__input--button:hover {
+.landing__input--link:hover {
   background-color: #ff328f;
   border: 1px solid #ff328f;
+}
+
+.landing__input--link:active{
+  transition: all 0.05s;
+  background-color: #5D3EFF;
+  border: 1px solid #5D3EFF;
 }
 
 .landing__img {

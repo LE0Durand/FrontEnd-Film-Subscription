@@ -16,7 +16,10 @@
       <div class="row">
         <div class="navbar__wrapper">
           <figure class="navbar__logo">
-            <img src="./assets/blinker-icon-white.png" class="navbar__logo--img" />
+            <img
+              src="./assets/blinker-icon-white.png"
+              class="navbar__logo--img"
+            />
           </figure>
           <div class="navbar__links">
             <a
@@ -41,14 +44,17 @@
             Browse our <span class="blue">Films</span>
           </h2>
           <div class="landing__input--wrapper">
-            <input
-              type="text"
-              placeholder="Search a film"
-              class="landing__input--search"
-            />
-            <button class="landing__input--button" onclick="">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+            <form id="search-film" onsubmit="renderFilm()">
+              <input
+                type="text"
+                placeholder="Search a film"
+                class="landing__input--search"
+                required
+              />
+              <button class="landing__input--button" onclick="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
           </div>
         </div>
       </div>
