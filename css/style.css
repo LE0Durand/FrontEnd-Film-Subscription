@@ -152,10 +152,12 @@ LANDING PAGE
 }
 
 .landing__input--link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  width: 75%;
+  width: 65%;
   height: 70px;
-  text-align: center;
   border: 1px solid #6030b1;
   background-color: #6030b1;
   box-shadow: 7px 7px 14px rgb(134 93 204 / 30%);
@@ -164,7 +166,6 @@ LANDING PAGE
   color: #fff;
   border-radius: 50px;
   transition: all 0.25s ease;
-  padding-top: 8px;
 }
 
 .landing__input--link:hover {
@@ -232,4 +233,22 @@ LANDING PAGE
     .landing__img{
         display: none;
     }
+
+    .landing__input--link{
+    width: 50%;
+    height: 60px;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+@media (max-width: 450px){
+  .landing__input--link{
+    height: 110%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4px;
+  }
 }

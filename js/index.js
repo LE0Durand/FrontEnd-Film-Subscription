@@ -2,15 +2,15 @@
 
 const filmListEL = document.querySelector(".film-list");
 
-async function main(){
-    const films = await fetch("https://www.omdbapi.com/?apikey=7dd56162&s=harry");
-    const filmObject= await films.json();
-    const filmData = await Object.values(filmObject)[0];
+// async function main(){
+//     const films = await fetch("https://www.omdbapi.com/?apikey=7dd56162&s=harry");
+//     const filmObject= await films.json();
+//     const filmData = await Object.values(filmObject)[0];
 
-    filmListEL.innerHTML = filmData.map((film) => filmHTML(film)).join("");
-}
+//     filmListEL.innerHTML = filmData.map((film) => filmHTML(film)).join("");
+// }
 
-main();
+// main();
 
 async function searchFilm(event){
   event.preventDefault();
