@@ -38,5 +38,5 @@ function filmHTML(film){
 
 function showFilmInfo(filmID){
   localStorage.setItem("filmID", filmID);
-  window.location.href= `${window.location.origin}/film.html`;
+  window.location.href= `${window.location.origin}/FrontEnd-Film-Subscription/film.html`;
 }
