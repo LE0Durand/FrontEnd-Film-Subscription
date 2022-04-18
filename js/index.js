@@ -2,6 +2,7 @@
 
 const filmListEL = document.querySelector(".film-list");
 
+
 // async function main(){
 //     const films = await fetch("https://www.omdbapi.com/?apikey=7dd56162&s=harry");
 //     const filmObject= await films.json();
@@ -24,7 +25,8 @@ async function searchFilm(event){
 }
 
 function filmHTML(film){
-    return `<div class="film-card">
+  console.log(`${film.imdbID}`);
+    return `<div class="film-card" onclick="showFilmInfo('${film.imdbID}')">
     <div class="film-card__container">
       <img class="film__img" src="${film.Poster}" alt="">
       <h3 class="film__title">${film.Title}</h3>
@@ -32,4 +34,9 @@ function filmHTML(film){
         <p class="film__para"><b>Type :</b> ${film.Type}</p>
     </div>
   </div>`
+}
+
+function showFilmInfo(filmID){
+  localStorage.setItem("filmID", filmID);
+  window.location.href= `${window.location.origin}/film.html`;
 }
